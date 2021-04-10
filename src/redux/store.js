@@ -1,8 +1,9 @@
-// import createStore and combineReducers
-// import all of the reducers
-// combine all of the reducers
-// initialize store with combined reducers
-// export default store
+// BASIC REDUX STORE
+    // import createStore and combineReducers
+    // import all of the reducers
+    // combine all of the reducers
+    // initialize store with combined reducers
+    // export default store
 
 import { createStore, combineReducers } from 'redux';
 import ParticleReducer from './ParticleReducer'
