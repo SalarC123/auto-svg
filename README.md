@@ -6,4 +6,4 @@
 **•Draw Your Own SVG (canvas2svg module)**<br/>
 **•Material UI Mobile Grid**<br/>
 **•Redux**<br/>
-**•**<br/>
+**•Move CSS to Seperate CSS Files**<br/>
