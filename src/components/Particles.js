@@ -3,11 +3,14 @@ import Slider from '@material-ui/core/Slider'
 import TextField from '@material-ui/core/TextField'
 import ColorPicker from 'material-ui-color-picker'
 import AutorenewIcon from '@material-ui/icons/Autorenew'
+import SaveSVG from './SaveSVG'
+import {useRef} from 'react'
 
 function Particles() {
 
     const particles = useSelector(store => store.ParticleReducer)
     const dispatch = useDispatch()
+    const svgRef = useRef(null)
 
     return (
         <>
@@ -52,9 +55,11 @@ function Particles() {
                     }}
                 />
 
+                <SaveSVG svg={svgRef.current}/>
+
             </div>
         
-            <svg viewBox="0 0 100 100">
+            <svg viewBox="0 0 100 100" ref={svgRef}>
                 {particles.coords.map((coords) => (
                 <circle fill={particles.color} cx={coords[0]} cy={coords[1]} r={Math.random() * particles.maxSize}/>
                 ))}
