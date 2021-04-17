@@ -8,10 +8,12 @@
 import { createStore, combineReducers } from 'redux';
 import ParticleReducer from './ParticleReducer'
 import PolygonReducer from './PolygonReducer'
+import WaveReducer from './WaveReducer'
 
 const allReducers = combineReducers({
     ParticleReducer,
     PolygonReducer,
+    WaveReducer
 })
 
 let store = createStore(allReducers)
