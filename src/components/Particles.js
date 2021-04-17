@@ -11,8 +11,9 @@ function Particles() {
 
     return (
         <>
-            {/* goes in dashboard component */}
             <div className="controls">
+                <h1>Particles</h1>
+
                 <Slider 
                     defaultValue={0}
                     min={1} 
