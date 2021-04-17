@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&display=swap');
-
 .controls {
     width: calc(100% - 3rem);
     margin-left: 1.5rem;
     margin-top: 1rem;
 }
 
-h1 {
-    font-size: 5rem;
-    font-family: Biryani;
-}
-
-@media (max-width: 800px) {
-    h1 {
-        font-size: 18vw;
-    }
+.sections section {
+    height: 40vh;
+    border-bottom: 1rem solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
