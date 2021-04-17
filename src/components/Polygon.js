@@ -23,6 +23,7 @@ function Polygon() {
 
         <>
             <div className="controls">
+                <h1>Polygon</h1>
                 <TextField
                     type="number"
                     label="Number of Sides"

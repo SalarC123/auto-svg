@@ -1,7 +1,8 @@
 import '../css/App.css';
 import Particles from './Particles'
 import Polygon from './Polygon'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Wave from './Wave'
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
 
         <Switch>
           <Route exact path='/'>
-            <div>
-              MAIN PAGE
-            </div>
+            <Link to="/particles">Particles</Link>
+            <Link to="/polygon">Polygon</Link>
+            <Link to="/wave">Waves</Link>
           </Route>
 
           <Route exact path='/particles'>
@@ -24,6 +25,10 @@ function App() {
 
           <Route exact path='/polygon'>
             <Polygon/>
+          </Route>
+
+          <Route exact path='/wave'>
+            <Wave/>
           </Route>
         </Switch>
 
